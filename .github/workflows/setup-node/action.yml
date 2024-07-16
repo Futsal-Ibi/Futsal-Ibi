@@ -14,7 +14,7 @@ runs:
       uses: actions/cache@v3
       with:
         path: futsal-ibi/node_modules
-        key: futsal-ibi/node-modules-${{ hashFiles('package-lock.json') }}
+        key: futsal-ibi/node-modules-${{ hashFiles('.package-lock.json') }}
 
     - name: Install dependencies 🔧
       shell: bash
