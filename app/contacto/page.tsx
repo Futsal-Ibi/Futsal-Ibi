@@ -34,6 +34,6 @@ const Contacto = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Contacto;

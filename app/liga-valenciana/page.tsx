@@ -9,6 +9,7 @@ import lv_club_1 from "../../public/liga_valenciana_1.jpg";
 import lv_club_2 from "../../public/liga_valenciana_2.jpg";
 import lv_club_3 from "../../public/liga_valenciana_3.jpg";
 import lv_club_4 from "../../public/liga_valenciana_4.jpg";
+import { StaticImageData } from 'next/image';
 
 const LigaValenciana = () => {
   const [imgSrc, setImgSrc] = useState(foto_club_lg);
@@ -31,7 +32,7 @@ const LigaValenciana = () => {
     return () => window.removeEventListener("resize", actualizarImagen); // Limpieza
   }, []);
 
-  const textContent = [
+  const textContent: { type: "text" | "image"; content: string | StaticImageData; caption?: string }[] = [
     { type: 'text', content: "Por suerte, en Ibi contamos con un gran talento de jugadores y jugadoras y aquí podemos observar algunos ejemplos como son Sandra Navarro (Convocada con la Sub-14 y jugó el campeonato de España), Valerio Rico y Martina Picó (Convocadas con la Sub-12) o Adrián Company (Convocado con la Sub-10)." },
     { type: 'image', content: lv_club_1, caption: 'LigaValenciana del club - Foto 1' },
     { type: 'image', content: lv_club_4, caption: 'LigaValenciana del club - Foto 2' },
