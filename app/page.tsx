@@ -1,30 +1,34 @@
+import Textbox from "@/components/Textbox";
+import foto_club from "../public/landing.png";
+
+
 import Image from "next/image";
+import ImageGallery from "@/components/ImageGallery";
 
 export default function Home() {
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="flex flex-col align-center items-center">
-        <div className="mb-24">
-          <h1 className="text-4xl font-bold">¡Bienvenido a la página oficial del CFS Futsal Ibi!</h1>
-        </div>
-        <div className="mb-12">
-          <p className= "text-xl">Por el momento, este sitio web se encuentra en desarrollo.</p>
-        </div>
-        <div className="mb-5">
-          <p>
-            Contacta con nosotros a través de nuestro Instagram:
-          </p>
-        </div>
-        <div className="
-            p-2
-            bg-gradient-to-bl
-            from-green-400 to-blue-400
-            hover:from-blue-400
-            hover:to-pink-400">
-          <a className="" href="https://instagram.com/futsal_ibi">Futsal Ibi - Instagram</a>
-        </div>
-        
+    <div className="flex flex-col align-center items-center animate-fadeIn">
+      <div className='flex items-center mt-24 animate-slideIn'>
+        <Image 
+            src={foto_club} 
+            alt={"Foto de club"} 
+            sizes="100vw"
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
+          />
       </div>
-    </main>
+      <div className=" bg-white p-24 text-center">
+          <h3 className="text-xl font-semibold">Con 13 equipos de base, entre ellos 8 federados, y dos sénior militando en 3ª División y en Regional Preferente, le damos la oportunidad a todo aquel que quiera jugar al fútbol sala en Ibi.</h3>
+          <br />
+          <br />
+          <h4 className="text-xl">Adéntrate en nuestra página web o en redes sociales para conocernos mejor. Si tienes cualquier duda o quieres formar parte de la família Futsal Ibi, no dudes en ponerte en contacto con nosotros.</h4>
+      </div>
+      <div className="">
+        <ImageGallery></ImageGallery>
+      </div>
+    </div>
   );
 }

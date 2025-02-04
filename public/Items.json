@@ -1,0 +1,23 @@
+
+{
+    "items": {
+        "bootstrap": [
+        {
+            "id": 1,
+            "title": "Photography",
+            "body": "Bootstrap Carousel Example",
+            "imageUrl": "/../../../public/fotoclub.JPG",
+            "docs": "https://getbootstrap.com/docs/4.0/components/carousel/"
+        },
+        {
+            "id": 2,
+            "title": "Photography",
+            "body": "Bootstrap Carousel Example",
+            "imageUrl": "/../public/fotoclub.JPG",
+            "docs": "https://getbootstrap.com/docs/4.0/components/carousel/"
+        }
+        ]
+    }
+}
+     
+  
